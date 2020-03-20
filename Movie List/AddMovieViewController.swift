@@ -24,9 +24,6 @@ class AddMovieViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func cancel(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     
     @IBAction func AddMovieSave(_ sender: Any) {
         guard let newMovieTitle = addMovieTextField.text else { return }
@@ -36,8 +33,8 @@ class AddMovieViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
+    
+    /*    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

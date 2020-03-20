@@ -39,6 +39,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qR-nw-tFv">
                                                     <rect key="frame" x="310" y="6" width="46" height="31.5"/>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="hasSeenButtonClicked:" destination="TAo-D5-jOd" eventType="touchUpInside" id="ClV-X5-mpb"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -52,7 +55,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="MovieSeenButton" destination="3qR-nw-tFv" id="VCi-Rm-QgX"/>
+                                            <outlet property="hasSeenButton" destination="3qR-nw-tFv" id="9ex-p6-rO5"/>
                                             <outlet property="movieLabel" destination="Ky2-g8-H2N" id="Qn5-uj-sRu"/>
                                         </connections>
                                     </tableViewCell>
@@ -125,13 +128,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8qK-hH-TUt"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4K4-0W-k1U">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="teF-pl-9ha">
-                            <connections>
-                                <action selector="cancel:" destination="VBT-nW-F1S" id="5Xw-6h-oL7"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="4K4-0W-k1U"/>
                     <connections>
                         <outlet property="addMovieTextField" destination="QsB-aP-ym8" id="a96-eb-h6B"/>
                     </connections>
